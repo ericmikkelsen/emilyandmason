@@ -1,0 +1,10 @@
+.Main {
+    padding-bottom: var(--space-600);
+}
+
+.Main > * {
+    padding: 0 var(--space-400) 0;
+    max-width: 27rem;
+    margin-left: auto;
+    margin-right: auto;
+}

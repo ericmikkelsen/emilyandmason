@@ -1,0 +1,63 @@
+label {
+  clear: right;
+  vertical-align: bottom;
+}
+
+input + label {
+  vertical-align: middle;
+}
+
+input:focus,
+button:focus,
+button:hover,
+textarea:focus {
+  outline-width: var(--space-100);
+  outline-style: solid;
+  outline-color: var(--text-shadow);
+}
+input[type="text"],
+input[type="email"] {
+  vertical-align: bottom;
+  padding: var(--space-100);
+}
+
+.reveal {
+  transition: opacity .25s;
+}
+
+:not(:checked) + * + .reveal  {
+  display: none;
+  opacity: 0;
+}
+
+textarea {
+  width: 100%;
+}
+
+button {
+  position: relative;
+  font-family: var(--type-family-heading);
+  font-weight: bold;
+  font-size: var(--h5);
+  padding: var(--space-300);
+  background: var(--text-shadow);
+  border: none;
+}
+
+button:focus,
+button:hover {
+  background: var(--bg);
+}
+
+button:before {
+    content: "\25B6";
+    position: absolute;
+    margin-right: .25em;
+    left: -1.5em;
+    transition: transform .2s;
+    text-shadow: .1em .1em 0 var(--text-shadow), .2em .2em 0 var(--bg);
+}
+
+button:not(:focus):before {
+    transform: scale(0);
+}

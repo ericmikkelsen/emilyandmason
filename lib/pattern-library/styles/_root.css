@@ -1,0 +1,246 @@
+:root {
+    /* font-families */
+    --type-sans-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; 
+    --type-serif-system: 'Times', serif;
+    --type-sans: var(--type-sans-system);
+    --type-serif: var(--type-serif-system);
+
+    /* colors */
+    --blue:         #00babb;
+    --blue-dark:    #006b6d;
+    --yellow:       #ecd600;
+    --pink-light:   #f2a0c0;
+    --pink:         #d9539a;
+    --pink-dark:    #8d007c;
+    --white:        #fffffe;
+    --black:        #1a1919;
+
+    box-sizing: border-box;
+
+    /* defaults */
+    --bg: var(--white);
+    --link: var(--blue-dark);
+    --text: var(--black);
+    --text-shadow: var(--bg);
+}
+
+.theme--pink-light {
+    --bg: var(--pink-light);
+    --link: var(--black);
+    --text: var(--black);
+    --text-shadow: var(--blue);
+    --logo-line: var(--text-shadow);
+    --logo-fill: var(--text);
+    --logo-fill-2: var(--text-shadow);
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+.theme--pink-light a {
+    color: var(--link);
+    text-shadow: 0 .05em var(--bg);
+}
+
+.theme--pink-light .logo-fill {
+    fill: var(--logo-fill);
+}
+
+.theme--pink-light .logo-fill-2 {
+    fill: var(--logo-fill-2);
+}
+
+.theme--pink-light .logo-line {
+    stroke: var(--logo-line);
+}
+ 
+.theme--pink {
+    --bg: var(--pink);
+    --link: var(--white);
+    --text: var(--white);
+    --text-shadow: var(--blue-dark);
+    --logo-line: var(--text-shadow);
+    --logo-fill: var(--text);
+    --logo-fill-2: var(--text-shadow);
+    background-color: var(--bg);
+    color: var(--text);
+} 
+
+.theme--pink a {
+    color: var(--link);
+    text-shadow: 0 .05em var(--bg);
+}
+
+.theme--pink .logo-fill {
+    fill: var(--logo-fill);
+}
+
+.theme--pink .logo-fill-2 {
+    fill: var(--logo-fill-2);
+}
+
+.theme--pink .logo-line {
+    stroke: var(--logo-line);
+}
+
+.theme--pink-dark {
+    --bg: var(--pink-dark);
+    --link: var(--white);
+    --text: var(--white);
+    --text-shadow: var(--black);
+    --logo-line: var(--text-shadow);
+    --logo-fill: var(--text);
+    --logo-fill-2: var(--text-shadow);
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+.theme--pink-dark a {
+    color: var(--link);
+    text-shadow: 0 .05em var(--bg);
+}
+
+.theme--pink-dark .logo-fill {
+    fill: var(--logo-fill);
+}
+
+.theme--pink-dark .logo-fill-2 {
+    fill: var(--logo-fill-2);
+}
+
+.theme--pink-dark .logo-line {
+    stroke: var(--logo-line);
+}
+
+.theme--blue {
+    --bg: var(--blue);
+    --link: var(--black);
+    --text: var(--black);
+    --text-shadow: var(--yellow);
+    --logo-line: var(--text-shadow);
+    --logo-fill: var(--text);
+    --logo-fill-2: var(--text-shadow);
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+.theme--blue a {
+    color: var(--link);
+    text-shadow: 0 .05em var(--bg);
+}
+
+.theme--blue .logo-fill {
+    fill: var(--logo-fill);
+}
+
+.theme--blue .logo-fill-2 {
+    fill: var(--logo-fill-2);
+}
+
+.theme--blue .logo-line {
+    stroke: var(--logo-line);
+}
+
+.theme--blue-dark {
+    --bg: var(--blue-dark);
+    --link: var(--white);
+    --text: var(--white);
+    --text-shadow: var(--black);
+    --logo-line: var(--text-shadow);
+    --logo-fill: var(--text);
+    --logo-fill-2: var(--text-shadow);
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+.theme--blue-dark a {
+    color: var(--link);
+    text-shadow: 0 .05em var(--bg);
+}
+
+.theme--blue-dark .logo-fill {
+    fill: var(--logo-fill);
+}
+
+.theme--blue-dark .logo-fill-2 {
+    fill: var(--logo-fill-2);
+}
+
+.theme--blue-dark .logo-line {
+    stroke: var(--logo-line);
+}
+
+.theme--yellow {
+    --bg: var(--yellow);
+    --link: var(--black);
+    --text: var(--black);
+    --text-shadow: var(--blue);
+    --logo-line: var(--text-shadow);
+    --logo-fill: var(--text);
+    --logo-fill-2: var(--text-shadow);
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+.theme--yellow a {
+    color: var(--link);
+    text-shadow: 0 .05em var(--bg);
+}
+
+.theme--yellow .logo-fill {
+    fill: var(--logo-fill);
+}
+
+.theme--yellow .logo-fill-2 {
+    fill: var(--logo-fill-2);
+}
+
+.theme--yellow .logo-line {
+    stroke: var(--logo-line);
+}
+
+.logo-line {
+    stroke-width: 3;
+}
+.u-text-shadow{
+    text-shadow: .05em .05em 0 var(--text-shadow);
+}
+
+a { 
+    position: relative;
+    text-decoration: none;
+    border-bottom: .1em solid;
+}
+
+a:hover {
+    border-color: var(--text-shadow);
+}
+
+a:focus {
+    outline-color: var(--text-shadow);
+    outline-style: solid;
+}
+
+body {
+  min-height:100vh;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+@media screen and (max-width: 700px){
+    body {
+        background-image: none !important;
+    }
+}
+
+body > *:not(script):not(style) {
+    text-decoration: center;
+    display: inline-block;
+    vertical-align: top;
+}
+
+* { 
+    text-align: left;
+    max-width:100%;
+    box-sizing:inherit;
+}

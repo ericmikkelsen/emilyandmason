@@ -1,0 +1,96 @@
+:root {
+    font-size: 1.25rem;
+    --space-100: .25rem;
+    --space-200: .5rem;
+    --space-300: .75rem;
+    --space-400: 1.5rem;
+    --space-500: 3rem;
+    --space-600: 4.5rem;
+    --space-700: 7.5rem;
+    --space-800: 12rem;
+    --space-900: 19.5rem;
+    --space-1000: 31.5rem;
+    --space-readable: 31.5rem;
+    --space-readable-padding: 4.761904761%; /*1.5rem padding in percentage*/
+    --space-column: 12rem; 
+    --space-column-padding: 12.5%;
+}
+
+h1, .h1 {
+    font-size: 2rem;
+    line-height: 1.5;
+};
+h2, .h2 {
+    font-size: 1.3375rem;
+    line-height: 1.1214953271;
+};
+h3, .h3 {
+    font-size: 1.25rem;
+    line-height: 1.2;
+};
+h4, .h4 {
+    font-size: 1.2rem;
+    line-height: 1.25
+};
+h5, .h5 {
+    font-size: 1.1214953271rem;
+    line-height: 1.3375
+};
+h6, .h6 {
+    font-size: 1em;
+    line-height: 1.5
+};
+
+@media screen and (max-width: 320px) {
+    :root {
+        font-size: calc(.5rem + 2.5vw);
+    }
+    h1, .h1{
+        font-size: 1.3375rem;
+        line-height: 1.1214953271;
+    };
+    h2, .h2: {
+        font-size: 1.28rem;
+        line-height: 1.171875;
+    };
+}
+
+@media screen and (min-width: 600px) {
+
+    h1, .h1 {
+        font-size: 3.6rem;
+        line-height: 1.2;
+    };
+
+    h2, .h2 {
+        font-size: 3rem;
+        line-height: 1.5;
+    };
+
+    h3, .h3 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    };
+
+    h4, .h4 {
+        font-size: 2rem;
+        line-height: 1.5;
+    };
+    
+    h5, .h5 {
+        font-size: 1.25rem;
+        line-height: 1.2;
+    };
+    
+    h6, .h6 {
+        font-size: 1rem;
+        line-height: 1.5;
+    };
+
+}
+
+@media screen and (min-width: 800px){
+    :root {
+        font-size: calc(.75rem + 1vw);    
+    }
+}

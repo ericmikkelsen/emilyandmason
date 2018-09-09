@@ -1,0 +1,14 @@
+.banner {
+  padding: var(--space-400) 5%;
+  text-align: center;
+}
+
+.banner > * {
+  max-width: var(--space-readable);
+  margin: 0 auto;
+  padding: 0;
+}
+
+.banner__heading {
+  font-family: "cursive";
+}

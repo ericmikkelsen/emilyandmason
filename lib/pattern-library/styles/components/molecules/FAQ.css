@@ -1,0 +1,25 @@
+.FAQ {
+  padding-top: var(--space-400);
+  padding-bottom: var(--space-400);
+  max-width: var(--space-readable);
+}
+
+.FAQ > * {
+  text-align: inherit;
+}
+
+.FAQ--right {
+  text-align: right;
+}
+
+.FAQ--right > * {
+  margin-left: auto;
+}
+
+.FAQ__question {
+  @apply --h4;
+}
+
+.FAQ__answer {
+  @apply --h6;
+}

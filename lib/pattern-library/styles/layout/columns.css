@@ -1,0 +1,4 @@
+.column--main>*{
+    max-width: var(--space-readable);
+    margin: 0 auto;
+}

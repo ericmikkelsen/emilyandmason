@@ -1,0 +1,7 @@
+body.home.home {
+    background-image: url('/wp-content/themes/emilyandmason2018/images/border.svg'), url('/wp-content/themes/emilyandmason2018/images/border.svg');
+    background-size: var(--space-400), var(--space-400);
+    background-repeat: repeat-x, repeat-x;
+    background-position: 0 -.75rem, 0 calc( 100% + var(--space-300) );
+    padding-top: var(--space-400);
+}

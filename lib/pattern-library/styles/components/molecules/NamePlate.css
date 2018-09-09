@@ -1,0 +1,19 @@
+.NamePlate {
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--type-family-heading);
+    text-align: center;
+}
+.NamePlate > * {
+    padding: var(--space-400);
+    border: none;
+}
+.NamePlate__home {
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+.NamePlate__home svg {
+    height: auto;
+}

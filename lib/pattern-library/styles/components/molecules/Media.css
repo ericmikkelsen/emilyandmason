@@ -1,0 +1,23 @@
+.media {
+  display: block;
+  position: relative;
+}
+
+.media:after {
+  content: '';
+  display: block;
+}
+
+.media--1x1:after {
+  background-color: #777;
+  padding: 50% 0;
+}
+
+.media__src {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

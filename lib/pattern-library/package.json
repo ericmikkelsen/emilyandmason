@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "pcss": "postcss styles/style.css  -o  ../../css/style.css"
+  },
+  "dependencies": {
+    "cssnano": "^3.10.0",
+    "postcss": "^6.0.13",
+    "postcss-cli": "^4.1.1",
+    "postcss-css-variables": "^0.8.0",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-hash": "^0.2.1",
+    "postcss-import": "^11.0.0"
+  }
+}

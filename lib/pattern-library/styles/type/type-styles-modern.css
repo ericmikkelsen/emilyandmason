@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Arbutus+Slab');
+@import url('./font-nickainley.css');
+@import url('./font-futura.css');
+
+:root {
+    --type-family-script: nickainleynormal;
+    --type-family-heading: Futura, futura, 'Futura-Bol', Futura-Bol, "Trebuchet MS", Arial, sans-serif;
+    --type-family-body: 'Arbutus Slab', serif;
+
+    font-family: var(--type-family-body);
+}
+
+h1,.h1 {
+    font-family: var(--type-family-script);
+}
+
+b, 
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6,
+strong {
+    font-family: var(--type-family-heading);
+}
+
+p {
+    font-weight: 400;
+}

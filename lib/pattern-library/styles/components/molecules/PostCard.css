@@ -1,0 +1,29 @@
+.postCard {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.postCard__heading {
+
+}
+
+.postCard__body {
+  background-color: red;
+  padding: 1.44em 1.44em 0;
+  flex-grow: 1;
+  min-width: 50%;
+  flex-basis: 20.8em;
+}
+
+.postCard__body > * {
+  margin: 0 0 .72rem;
+}
+
+.postCard__media {
+  padding: 0;
+  min-width: 33%;
+  flex-grow: 1;
+  margin: 0;
+  max-width: 100%;
+  flex-basis: 10.8em;
+}

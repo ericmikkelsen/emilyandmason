@@ -1,0 +1,8 @@
+/* Markup Defaults */
+
+a,b,em,span,strong {
+  font-size:1em;
+  }
+small,sub,sup{
+  font-size:.75em;
+}

@@ -1,0 +1,67 @@
+.MainNavigation {
+    padding: var(--space-200) var(--space-400);
+    overflow: auto;
+    font-family: var(--type-family-heading);
+    font-weight: bold;
+}
+
+
+.MainNavigation__link{
+    @apply
+    --h6;
+    display: block;
+    padding: var(--space-300) var(--space-200);
+    margin: 0;
+    text-decoration: none;
+    position: relative;
+    border: none;
+    text-shadow: none;
+}
+
+.MainNavigation__link:before {
+    content: "\25B6";
+    position: absolute;
+    margin-right: .25em;
+    transform: scale(0);
+    left: -1.5em;
+    transition: transform .2s;
+    text-shadow: .1em .1em 0 var(--text-shadow), .2em .2em 0 var(--bg);
+}
+
+.MainNavigation__link:hover:before,
+.MainNavigation__link:focus:before {
+    border-color: rgba(0,0,0,0);
+    transform: scale(1);
+}
+
+.MainNavigation__link:hover {
+    background: var(--text-shadow);
+}
+
+.MainNavigation__link:focus {
+    outline-color: var(--text-shadow);
+    outline-style: solid;
+}
+
+.MainNavigation__link:focus:before {
+    content: "\25B6";
+    margin: 0 .25em;
+}
+ 
+ @media screen and ( max-width: 768px){
+    .MainNavigation {
+        background: inherit;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transition: transform .375s, opacity .375s;
+    }
+
+    .MainNavigation:not(:target) {
+        opacity: 0;
+        transform: translateY(5%) scale(.95);
+        pointer-events: none;
+    }
+}  
